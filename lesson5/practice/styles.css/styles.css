@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  text-align: center;
+  height: 100%;
+  font-weight: 400;
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+}
+.text-section {
+  page-break-after: 20px;
+  float: left;
+  text-align: left;
+  height: 100%;
+  font-weight: 400;
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+.text-section-b,
+.text-section-y {
+  page-break-after: 20px;
+  float: right;
+  text-align: left;
+  height: 100%;
+  font-weight: 400;
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+.symbol {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+img {
+  display: list-item;
+}
+
+.img-man-blue {
+  padding: 40px;
+  float: left;
+  width: 56%;
+}
+
+.img-people {
+  padding-bottom: 50px;
+  float: right;
+  width: 59%;
+}
+
+.img-man,
+.img-man-y {
+  padding: 40px;
+  float: right;
+  width: 56%;
+}
+
+.w {
+  width: 40%;
+}
+
+p,
+h3 {
+  text-align: left;
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+  font-size: 12px;
+  padding: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+html,
+body {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+ul {
+  text-align: left;
+  font-size: 11px;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+.site-header {
+  align-items: center;
+  justify-content: space-between;
+}
+.site-footer {
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 250px;
+}
+
+.site-navigation {
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.tools {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button {
+  background-color: #ff9900; /* orange */
+  border: #ff9900;
+  border-radius: 4px;
+  color: white;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.button1 {
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.button3 {
+  background-color: #ff9900; /* orange */
+  border: #ff9900;
+  border-radius: 4px;
+  color: white;
+  padding: 7px 12px;
+  font-size: 13px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Complex Selectors</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/complex.selectors.css">
+</head>
+<body>
+
+    <!-- Grouping selector -->
+    <div class="container">
+      <h1>CSS Complex Selectors</h1>
+      <a href="../index.html">Go to home page</a>
+      <a href="./simple-selectors.html">Complex selectors</a>
+      <a href="./attribure.selectors.html">Attribure Selectors</a>
+    </div>
+
+    <div class="container">
+        <h3>ADAN</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, inventore suscipit quod ullam veniam quasi ipsa mollitia repellendus magni, odio illo voluptatibus corporis, commodi corrupti deserunt quibusdam? Laudantium, optio odio.</p>
+        <p class="class2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum esse, suscipit odio tenetur praesentium vel accusantium recusandae reiciendis, maxime maiores animi, cumque architecto nisi reprehenderit tempora voluptates at ipsa voluptatem?</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facilis quo aperiam ducimus perspiciatis reiciendis alias itaque necessitatibus tempore, expedita id adipisci porro cumque harum et animi obcaecati ut quibusdam!</p>
+        <p data-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe voluptate ipsum adipisci debitis, consequuntur ullam similique impedit eos eligendi, placeat esse qui maxime culpa aspernatur corrupti consectetur laudantium quibusdam.</p>
+    </div>
+
+    <!-- Compound selector -->
+    <div class="container">
+        <p class="class3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt optio incidunt harum exercitationem dignissimos ipsam, nobis ipsa dolorum beatae soluta facere culpa molestias quod, illum repudiandae neque officia aspernatur!</p>
+        <p class="class3 class4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt optio incidunt harum exercitationem dignissimos ipsam, nobis ipsa dolorum beatae soluta facere culpa molestias quod, illum repudiandae neque officia aspernatur!</p>
+    </div>
+
+
+    <!-- Descedant combinator -->
+    <div class="container">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis voluptates totam assumenda repudiandae commodi <span>This is descedant combinator</span> dolorem itaque esse, sit voluptatum porro placeat distinctio corporis rerum eveniet debitis aut id praesentium.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>This is descedant combinator</span> Optio consectetur a vero, alias voluptatibus reprehenderit nostrum dolor quod beatae autem rem voluptatem voluptas, voluptate saepe blanditiis ratione sapiente maxime! Natus?</p>
+
+    </div>
+
+    <!-- Child combinator -->
+    <div class="container">
+        <h4>Lorem ipsum dolor sit amet <span>This is span</span> consectetur adipisicing elit. Deserunt dolores dolorum qui, dolorem culpa adipisci veniam numquam dignissimos magni corrupti voluptates ducimus ea aut cupiditate! Nulla neque doloribus obcaecati delectus?</h4>
+        
+        <span>span1</span>
+        <span>span2</span>
+        
+        <span>span3</span>
+        <p>Lorem ipsum dolor sit amet consectetur <span>This is span</span> adipisicing elit. Dolores tenetur quasi, blanditiis dolorem nobis suscipit cum dicta officiis autem labore. Earum cupiditate, molestiae fuga numquam illo esse quaerat libero ratione.</p>
+    </div>
+
+    <!-- General sibling combinator  -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate architecto, alias placeat iusto nesciunt, omnis commodi dolorum aut voluptatibus tenetur mollitia, quos quidem doloribus sit ratione perspiciatis. Id, exercitationem.</p>
+       
+        <div>
+            <span>span1</span>
+        </div>
+
+        <section>
+            <span>span2</span>
+        </section>
+        
+        <span>General sibling combinator</span>      
+    </div>
+
+    <!-- Adjacent sibling combinator -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veritatis minus sunt optio similique deleniti ipsum at beatae officia ex? Quia accusamus maiores vel molestias vitae nisi quod quo deleniti?</p>
+
+        <div>
+            <span>span1</span>
+        </div>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sed reiciendis itaque qui doloribus tempore, deleniti ea possimus, optio ex molestiae labore adipisci culpa harum suscipit omnis minus nostrum. Tenetur.
+        </p>
+    </div>
+    
+</body>
+</html>

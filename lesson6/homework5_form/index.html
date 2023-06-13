@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>KM_HW5_form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/styles.css"
+    /></head
+  ><br />
+
+  <body>
+    <section class="content" id="contact">
+      <form>
+        <p>Full Name</p>
+        <label for="full-name"></label>
+        <input
+          type="text"
+          name="full-name"
+          id="full-name"
+          placeholder="Enter Full Name"
+          required
+        />
+      </form>
+      <br />
+
+      <form action="mailto:mariya.moko.m@gmail.com">
+        <label for="subject">Your email</label>
+        <input type="text" name="subject" id="subject" />
+        <input type="submit" value="send email" />
+      </form>
+      <br />
+      <!--<a href="mailto:mailto:mariya.moko.m@gmail.com?subject=Subject%&body=Body">Send email</a>-->
+      <form>
+        <p>Full Address</p>
+        <label for="full-adress"></label>
+        <input
+          type="text"
+          name="full-adress"
+          id="full-adress"
+          placeholder="Країна, регіон, місто/ селище, вулиця, дім"
+          required
+        />
+      </form>
+      <br />
+
+      <form>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        />
+
+        <label for="confimPassport">Confim Password</label>
+        <input
+          type="password"
+          name="confimPassport"
+          id="confimPassport"
+          placeholder="Confim password"
+          required
+        />
+
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Enter user name"
+        /><br />
+
+        <label for="role">Select option</label>
+        <select name="role" id="role">
+          <option>- Сhoose a Сourse -</option>
+          <option>Front-End</option>
+          <option>Back-End</option>
+          <option>Project Management</option>
+          <option>QA Manual</option>
+        </select>
+        <br />
+        <div>
+          <input type="checkbox" name="rules" id="rules" required />
+          <label for="rules">I agree to the terms of confidentiality</label>
+        </div>
+        <br />
+
+        <div>
+          <p>Sex</p>
+          <input type="radio" name="theme" id="theme" />
+          <label for="theme">Man</label>
+
+          <input type="radio" name="theme" id="theme" />
+          <label for="theme">Woman</label>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Сlear the Form</button>
+          <button type="submit">SignUp</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

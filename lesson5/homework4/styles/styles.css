@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  align-content: center;
+}
+
+.text {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.text2 {
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  background-color:rgb(230, 225, 225);
+}
+
+.text3 {
+  flex-direction:column;
+  text-align: center;
+}
+
+.text4 {
+  text-align: center;
+  font-size: 10px;
+  }
+
+.star {
+  display: flex;
+  flex-direction: row;
+  padding-left: 52px;
+}
+
+.p1 {
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #020202; /* orange */
+  border: #ff9900;
+  border-radius: 14px;
+  color: white;
+  padding: 7px 12px;
+  font-size: 13px;
+}
+

@@ -1,0 +1,32 @@
+/* Grouping selector */
+.class2, #p2, h3, [data-text] {
+    color: rgb(40, 85, 88);
+}
+
+/* Compound selector */
+p.class3 {
+    color: rgb(245, 232, 51);
+}
+
+p.class3.class4 {
+    color: rgb(165, 158, 59);
+}
+
+/* Descedant combinator */
+div span {
+    color: aqua;
+}
+ /*  Child combinator */
+div>span {
+    color: crimson;
+}
+
+/* General sibling combinator */
+div~span {
+    color: blueviolet;
+}
+
+/* Adjacent sibling combinato */
+div+p {
+    color: rgb(192, 35, 179);
+}
