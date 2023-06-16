@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Pseudo Classes</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/pseudo-classes.css" />
+  </head>
+  <body>
+    <!-- <div class="container">
+      <h1>CSS Pseudo Classes</h1>
+      <a href="../index.html">Go to home page</a>
+    </div> -->
+
+    <nav id="navigation">
+      <h1>Pseudo Classes</h1>
+      <ul>
+        <li><a href="../index.html">Go home page</a></li>
+        <li><a href="#hover-example">Hover</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <!-- :hover -->
+    <section id="hover-example" class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        architecto molestiae minus laudantium repellat voluptate veniam magni
+        facere repellendus ipsa illum temporibus nam, odit assumenda, fugit enim
+        adipisci cupiditate impedit?
+      </p>
+    </section>
+
+    <!-- :not -->
+    <section id="not-example" class="container">
+      <h2>Not</h2>
+      <p class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit error ad natus dolor? Exercitationem, quod laudantium nemo pariatur perspiciatis ad error ducimus, ratione nobis fugit incidunt, earum magni nesciunt.</p>
+      <p class="class1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatem blanditiis saepe, cupiditate, dolorum veritatis aliquam architecto a hic, et adipisci quae consequuntur rem nulla sit? Doloribus vel dignissimos fugiat?</p>
+      <p class="class2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium praesentium sint molestias dolore laboriosam quo. Officia voluptatibus repellat animi asperiores. Ab error veritatis omnis in, ut molestias tempora nam?</p>
+      <p class="class2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ea, eum tempore inventore, odio aperiam non commodi soluta nihil esse maxime ab quod fugit iusto natus aut, tenetur impedit quia!</p>
+    </section>
+
+    <!-- nth-child(n) -->
+    <section id="nth-child-example" class="container">
+      <h2>Nth child</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ea veniam impedit vitae odit quae, nisi ratione dolorem deleniti, tempora dignissimos. Veritatis molestias debitis delectus iure, molestiae excepturi quae? Fuga.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod reprehenderit nulla voluptates consectetur provident cum at nihil quo, accusamus ab placeat asperiores eligendi tenetur, incidunt cupiditate! Nihil, tempore quisquam?</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam architecto culpa suscipit nobis voluptatum commodi explicabo esse, voluptatem similique nihil ex nulla dicta debitis reiciendis quaerat, ab nostrum! Placeat, perferendis.</p>
+    </section>
+
+    <!-- form -->
+    <section id="form-example" class="container">
+      <h2>Form example</h2>
+      <form>
+        <input type="checkbox" checked>
+        <input type="checkbox">
+
+        <input type="text" disabled>
+        <input type="text" enabled>
+        <input type="text" required>
+        <button disabled>Btn disabled</button>
+        <button enabled> Btn enabled</button>
+        <button> Btn enabled</button>
+
+        <input type="email" value="random">
+        <input type="email" value="mail@mail.mail">
+
+      </form>
+    </section>
+
+  </body>
+</html>

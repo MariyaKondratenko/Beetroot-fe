@@ -12,7 +12,7 @@ p.class3.class4 {
     color: rgb(165, 158, 59);
 }
 
-/* Descedant combinator */
+/* Descendant combinator */
 div span {
     color: aqua;
 }
