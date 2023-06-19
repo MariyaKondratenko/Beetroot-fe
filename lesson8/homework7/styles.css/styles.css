@@ -148,6 +148,10 @@ a {
   border-bottom: 1px solid #828282;
 }
 
+a:hover {
+  font-weight: 900;
+}
+
 .skills-products {
   justify-content: space-between;
 }
@@ -176,5 +180,6 @@ a {
 .contacts-follow {
   display: block;
 }
+
 
 
