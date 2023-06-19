@@ -168,6 +168,19 @@ a:hover {
   gap: 50px;
 }
 
+.contacts-social-linkedin:hover  {
+  opacity: 0.5;
+}
+.contacts-social-instagram:hover  {
+  opacity: 0.5;
+}
+.contacts-social-behance:hover  {
+  opacity: 0.5;
+}
+.contacts-social-dribbble:hover  {
+  opacity: 0.5;
+}
+
 .contacts-msg-btn {
   background: #070707;
   border-radius: 22px;
@@ -183,3 +196,39 @@ a:hover {
 
 
 
+.hover-effect {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+
+.hover-effect {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hover-effect:after {
+  content: '»';
+  position: absolute;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hover-effect:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.hover-effect:hover:after {
+  opacity: 1;
+  right: 10px;
+  content: '»';
+  color: #777777;
+}
