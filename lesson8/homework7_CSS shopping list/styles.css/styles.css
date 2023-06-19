@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+	border-style: solid;
+	border-width: thick;
+	color: rgb(255, 255, 255);
+	
+}
+
+* {
+  transition: all 0.1s ease-in;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("..//font/Roboto-Regular.ttf");
+}
+
+body {
+  margin: 0px 130px;
+  background-color: #3b3f45;
+}
+
+.bg-color-title {
+  background-color: #4a4f56;
+  position: absolute;
+  width: 793px;
+  height: 82px;
+  left: 0px;
+  top: 0px;
+	
+}
+
+title {
+  position: absolute;
+  width: 276px;
+  height: 28px;
+  left: 247px;
+  top: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #ff8984;
+}
+input {
+  width: 19px;
+  height: 19px;
+}
+.text {
+  /* position: absolute;
+  width: 119px;
+  height: 21px;
+  left: 176px;
+  top: 113px; */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  line-height: 21px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-left: 12px;
+}
+
+.text-footer {
+  position: absolute;
+  width: 107px;
+  height: 21px;
+  left: 333px;
+  top: 429px;
+}
+
+.text-title {
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  width: 139px;
+  height: 19px;
+  left: 316px;
+  top: 51px;
+}
+.text-color {
+  color: #ff8984;
+}
+
+span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+
+}
+
+.mr-20 {
+  margin-top: 102px;
+}
+
+.mr-16 {
+  margin-left: 16px;
+}
+
+.mg-45 {
+  margin-top: 45px;
+}
+button {
+  width: 534px;
+  height: 45px;
+  align-items: center;
+  border: none;
+}
+
+.button-odd-row {
+  background: #7a7593;
+}
+
+.button-even-row {
+  background: #88839e;
+}
+
+.button-footer-bg {
+  background-color: #4a4f56;
+}
+
+/* li {
+	list-style-type: none;
+} */
+
+section button:hover {
+	background: #625E77;
+  opacity: 0.6;
+	border-style: solid none solid none;
+	cursor: pointer;
+	border-color: rgb(255, 255, 255);
+}
+
+section button:active {
+	background-color: rgb(241, 33, 33);
+}
+
+input[type="checkbox"]:checked + p {
+	text-decoration: line-through;
+	color: 
+#9B96AC;
+}
+
+span::before {
+  content: "(";
+}
+span::after{
+  content: ")";
+}
