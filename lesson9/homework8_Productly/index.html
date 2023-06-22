@@ -1,60 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>макет Productly</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css/styles.css'>
-
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>макет Productly</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles.css/styles.css'>
 </head>
-<body>
-  <header> 
-    <div class="flex mg-70">
-			<div><br>
-				<img src="./assets/images/logo.svg" alt="Site logo">
-				<img src="./assets/images/Productly.svg" alt="Site name">
-			</div>
-			<div>
-				<ul class="text flex">
-					<li class="text-orange">Product</li>
-					<li>Customers</li>
-					<li>Pricing</li>
-					<li>Resources</li>
-				</ul>
-			</div>
-			<div class="flex">
-        <button>Sing In</button>
-        <button class="button-orange">Sing Up</button>
-      </div>
-    </div>
-  </header>
-    
-  <main>
+	<body>
+		<!-- add header and first section-->
+		<header> 
+			<section class="flex">
+				<div><br>
+					<img src="./assets/images/logo.svg" alt="Site logo" >
+					<img src="./assets/images/Productly.svg" alt="Site name"  class="img-align ">
+				</div>
+				
+				<div>
+					<ul class="text flex">
+						<li class="text-orange">Product</li>
+						<li>Customers</li>
+						<li>Pricing</li>
+						<li>Resources</li>
+					</ul>
+				</div>
+	
+				<div class="flex">
+					<button>Sing In</button>
+					<button class="button-orange">Sing Up</button>
+				</div>
+			</section>
+ 		</header>
+		
+		<main >
 		<!-- Site sections -->
-		<section >
-			<div>
-        <img class="img-people" src="./assets/images/Image.svg" alt="img people"/>
+		<section>
+			<div class="flex flex-end  mg-70-top">
+        <img class="img-people " src="./assets/images/Image.svg" alt="img people" width="100%"/>
         <h2 class="mg-120 padd-top-100">The Design Thinking superpowers</h2>
       </div>
 			<div>
-				<p class="text text-section mg-120 padd-top-100 p">
+				<p class="text text-section mg-120 padd-top-100">
 					Tools, tutorials, design and innovation experts, all in one place!
 					The most intuitive way to imagine your next user experience.
 				</p>
 			</div>
 			<div>
-				<form class="symbol">
-					<button class="button-orange button-orange-get-sr mg-120">Cet started</button>
+				<form>
+					<button class="text button-orange button-orange-get-sr mg-120">Cet started</button>
 				</form>
 			</div>
-		</section>
+		</section><br>
 
+		<!-- Add section design tools -->
+		<section class="flex">
+			<div class="background-image">
+				<!-- <img class="background-image" src="./assets/images/bg.svg" > -->
+				<p class="title">We design tools to unveil <br> your superpowers</p>
+				<div class="flex mg-70-top ">
+					<div >
+						<img src="./assets/images/lila_.svg" alt="click img">
+						<h3 class="mg-30-top">First click tests</h3>
+						<p class="text mg-30-top">While most people enjoy casino <br> gambling</p>
+					</div>
+					<div>
+						<img src="./assets/images/yellow.svg" alt="survey img">
+						<h3 class="mg-30-top">Design surveys</h3>
+						<p class="text mg-30-top">Sports betting, lottery and bingo <br> playing for the fun.</p>
+					</div>
+					<div >
+						<img src="./assets/images/red.svg" alt="preference img">
+						<h3 class="mg-30-top">Preference tests</h3>
+						<p class="text mg-30-top">The Myspace page defines the <br> individual.</p>
+					</div>
+					<div>
+						<img src="./assets/images/blue_time.svg" alt="clock img">
+						<h3 class="mg-30-top">Five second tests</h3>
+						<p class="text mg-30-top">Personal choices and the overall <br> personality of the person.</p>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<form class="flex button-center mg-70">
+			<button class="button-orange button-orange-sign-up">SIGN UP NOW</button>
+		</form>
   </main>
 
   <footer>
-
+		<div class="flex ">
+			<div class="flex text">
+				<div >
+        	<img src="./assets/images/logo.svg" alt="Site logo" />
+        	<img src="./assets/images/Productly.svg" alt="Site name"  class="img-align ">
+				</div>
+			
+				<div class="flex ">
+					<ul>
+						<li class="text-bold">Quick Links</li>
+						<li>About us</li>
+						<li>Blog</li>
+						<li>Contact</li>
+						<li>FAQ</li>
+					</ul>
+				</div>
+				<div class="flex ">
+					<ul>
+						<li  class="text-bold">Legal Stuff</li>
+						<li>Disclaimer</li>
+						<li>Financing</li>
+						<li>Privacy Policy</li>
+						<li>Terms of Service</li>
+					</ul>
+				</div>
+				<div class="flex ">
+					<form>
+						<p class="text-bold mg-10">Knowing you're always on <br> the best energy deal.</p>
+						<input type="email" name="useremail" id="useremail" /><br>
+						<button class="button-orange-sign-up button-orange mg-10" type="submit">Sing up Now</button><br />
+					</form>
+				</div>
+      </div>
+		</div>
     </footer>
-</html>
 
-<!-- add header and first section-->
+
+  </footer>
+</html>
