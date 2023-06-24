@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.architectural {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, minmax(50px, 1fr));
+  grid-template-areas:
+    "jezael-melgoza tom-w tom-w"
+    "johan-muchet johan-muchet federico-di-dio"
+    "casey-horner alexander-rotker alexander-rotker";
+  gap: 1.5rem;
+  padding: 0 135px;
+}
+
+.architectural>img {
+  width: 100%;
+}
+
+.architectural>img:nth-child(2) {
+  grid-area: tom-w;
+}
+
+.architectural>img:nth-child(3) {
+  grid-area: johan-muchet;
+}
+
+.architectural>img:nth-child(6) {
+  grid-area: alexander-rotker;
+}
+
+/* .architectural>img:nth-child(2),
+.architectural>img:nth-child(6) {
+  grid-column: 2 / 4;
+}
+
+.architectural>img:nth-child(3) {
+  grid-column: 1 / 3;
+} */
+
+.still-life {
+  display: grid;
+  grid-template: repeat(4, minmax(50px, 1fr)) / repeat(3, minmax(50px, 1fr));
+  /* grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(4, minmax(50px, 1fr)); */
+  grid-template-areas:
+    "robert sean sean"
+    "john john dave"
+    "john john dave"
+    "leonard leonard rob";
+  gap: 1.5rem;
+  padding: 0 135px;
+
+}
+
+.still-life>img {
+  width: 100%;
+}
+
+.still-life>img:nth-child(2) {
+  grid-area: sean;
+  /* grid-column: 2 / 4; */
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+}
+
+.still-life>img:nth-child(3) {
+  grid-area: john;
+  /* grid-area: 2 / 1 / 4 / 3; */
+  /* grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3; */
+}
+
+.still-life>img:nth-child(4) {
+  grid-area: dave;
+  /* grid-area: 2 / 3 / 4 / 4; */
+  /* grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4; */
+}
+
+.still-life>img:nth-child(5) {
+  grid-area: leonard;
+  /* grid-area: 4 / 1 / 5 / 3; */
+  /* grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 3; */
+}
+
+
+.portrait {
+  display: grid;
+  grid-template: repeat(5, minmax(50px, 1fr)) / repeat(3, minmax(50px, 1fr));
+  /* grid-template-columns: repeat(5, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, minmax(50px, 1fr)); */
+  grid-template-areas:
+  "pooja dom seth"
+  "devn dom noah"
+  "sincerely seth_2 noah"
+  "sincerely melissa melissa"
+  "brooke brooke clem";
+  gap: 1.5rem;
+  padding: 0 135px;
+}
+
+.portrait>img {
+  width: 100%;
+}
+
+.portrait>img:nth-child(2) {
+  grid-area: dom;
+  /* grid-row: 1 / 3;
+  grid-column: 2 / 3; */
+  /* grid-area: 1 / 2 / 3 / 3; */
+}
+
+.portrait>img:nth-child(6) {
+  grid-area: noah;
+  /* grid-row: 2 / 4;
+  grid-column: 3 / 4; */
+  /* grid-area: 2 / 3 / 4 / 4; */
+}
+
+.portrait>img:nth-child(7) {
+  grid-area: sincerely;
+  /* grid-row: 3 / 5;
+  grid-column: 1 / 2; */
+  /* grid-area: 3 / 1 / 5 /2; */
+}
+
+.portrait>img:nth-child(8) {
+  grid-area: melissa;
+  /* grid-column: 2 / 4; */
+}
+
+.portrait>img:nth-child(9) {
+  grid-area: brooke;
+  /* grid-column: 1 / 3; */
+}
