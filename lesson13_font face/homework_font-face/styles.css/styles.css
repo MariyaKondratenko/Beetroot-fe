@@ -50,12 +50,56 @@ html {
 	margin-bottom: 40px;
 }
 
+.mr-top {
+	margin-top: 70px;
+}
+
 h1 {
 	font-family: 'Francois One', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 36px;
 }
+
+.bgi {
+	background-image: url(bg-picture.svg);
+	position: fixed;
+	right: 0;
+	background-size: cover;
+	z-index: -1;
+	
+}
+
+.sidebar {
+	float: left;
+	padding-right: 40px;
+}
+
+.sticky {
+	overflow: scroll;
+	position: sticky;
+	top: 145px;
+}
+
+.sticky-header {
+	position: sticky;
+	padding: 45px 0px;
+	margin-right: 0%;
+	top: 0px;
+	background-color: rgb(255, 255, 255);
+}
+
+.main {
+	display: grid;
+	grid: auto / auto;
+}
+
+
+/* .hr-section {
+	color: #000000;
+	width: 20px;
+	height: 5px;
+} */
 
 #chapter {
 	font-family: 'Farro', sans-serif;
