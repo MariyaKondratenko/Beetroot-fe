@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 13px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Staatliches', cursive;
+	font-size: 22px;
+	gap: 35px;
+}
+
+.text-eng {
+	font-family: 'Tourney', cursive;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-bg {
+	background-color: rgb(205, 205, 205);
+}
+
+.mr-bottom {
+	margin-bottom: 83px;
+}
+
+.mr-bottom-p {
+	margin-bottom: 70px;
+}
+
+.mr-bottom-h {
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-family: 'Francois One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 36px;
+}
+
+#chapter {
+	font-family: 'Farro', sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	vertical-align: 20px;
+	text-transform: none;
+	letter-spacing: 0; 
+}
+
+.text {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 28px;
+}
