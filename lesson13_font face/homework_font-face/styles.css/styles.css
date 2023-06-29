@@ -10,12 +10,27 @@ html {
 	margin-top: 13px;
 }
 
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Staatliches', cursive;
 	font-size: 22px;
 	gap: 35px;
+}
+
+.sticky-header {
+	position: sticky;
+	padding: 45px 0px;
+	margin-right: 0%;
+	top: 0px;
+	background-color: rgb(255, 255, 255);
+}
+
+.sticky {
+	overflow: scroll;
+	position: sticky;
+	top: 145px;
 }
 
 .text-eng {
@@ -76,20 +91,6 @@ h1 {
 .sidebar {
 	float: left;
 	padding-right: 40px;
-}
-
-.sticky {
-	overflow: scroll;
-	position: sticky;
-	top: 145px;
-}
-
-.sticky-header {
-	position: sticky;
-	padding: 45px 0px;
-	margin-right: 0%;
-	top: 0px;
-	background-color: rgb(255, 255, 255);
 }
 
 .main {
