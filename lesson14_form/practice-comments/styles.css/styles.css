@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.comment {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+	margin-bottom: 50px;
+}
+
+.comment::after {
+  --border-width: 50px;
+	position: absolute;
+	transform: rotateZ(-45deg);
+	top: 160px;
+	left: 0;
+	border-style: solid;
+	border-color: transparent transparent green ;
+	border-width: 0 var(--border-width) var(--border-width) var(--border-width);
+  content: '';
+  width: 0;
+	height: 0;
+	color: red;
+}
+
+.comment--green {
+  background-color: green;
+}
+
+.comment-blue {
+  background-color: blue;
+}

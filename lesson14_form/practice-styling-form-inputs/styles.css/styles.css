@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --transition-duraction: 250ms;
+  --regular-padding: 10px;
+  --primary-color: gray;
+  --primary-lighte-color: whitesmoke;
+  --accent-color: #3F00FF;
+  --warm-color: #C70039;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: var(--regular-padding);
+  gap: 1rem;
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: var(--regular-padding);
+  color: var(--primary-color);
+  transition: var(--transition-duraction);
+}
+
+.form__control,
+.form__submit {
+  border: none;
+  outline: none;
+  padding: var(--regular-padding) 20px;
+}
+
+.form__control {
+  background-color: var(--primary-lighte-color);
+  width: 300px;
+}
+
+.form__submit {
+  border-radius: 4px;
+  color: var(--primary-lighte-color);
+  background-color: var(--accent-color);
+}
+
+/* 1 - знайти такий label після якого буде йти input і 
+внаслідок будемо відслідковувати два стани focus і valid */
+.form__label:has(+ .form__control:is(:focus, :valid)) {
+  transform: translateY(-10px);
+  color: var(--accent-color);
+  font-size: 10px;
+}
+
+/* 2 - знайти такий label після якого буде йти input і 
+внаслідок будемо відслідковувати стани invalid,
+вказуватиме на помилку  */
+.form__label:has(+ .form__control:invalid) {
+  color: var(--warm-color);
+}
+
+/* 3 - відслідкувати такий label після якого наступний input і 
+цей input не в стані фокусу */
+.form__label:has(+ .form__control:not(:focus)) {
+  color: var(--primary-color);
+}
+
+ /* 4 - form__field дорівнює контенту всередині себе,
+ (на   input не відображаються before i after!!) */
+.form__field::after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid var(--accent-color);
+  transition: var(--transition-duraction);
+  transform: scaleX(0); 
+  /* лінія присутня, але її масштаб дорівнює 0 */
+}
+
+/* 5 - шукає form__field який має безпосередньо в середині себе 
+form__control який знаходиться в стані focus, спрацьовує елемент 
+after і встановл. масштаб до 1 */
+.form__field:has(> .form__control:focus)::after {
+  transform: scaleX(1);
+}
+
+
+/* 6 - шукає form__field який має безпосередньо в середині себе 
+form__control при неправильному значені спрацьовує invalid, спрацьовує 
+елемент after і відображає червону лінію*/
+.form__field:has(> .form__control:invalid)::after {
+  border-bottom-color: var(--warm-color);
+}
