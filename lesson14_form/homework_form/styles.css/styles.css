@@ -1,0 +1,118 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+		gap: 7px;
+}
+html {
+    background-color: rgb(206, 206, 206);
+    margin: 55px 135px;
+}
+.container {
+    width: 570px;
+    height: 590px;
+    background-color: rgb(255, 255, 255);
+   padding: 25px 34px 16px 34px;
+}
+.input {
+	border-radius: 5px;
+	height: 30px;
+	border-color: #d3d3d3;
+	width: ;
+}
+.input-camera {
+	width: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+	}
+
+.form-a {
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.form_radio {
+display: inline-flex;
+cursor: pointer;
+gap: 20px;
+}
+
+.button {
+	position: relative;
+	text-align: center;
+	background-color: #007BFF;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	outline: none;
+	border: 0;
+}
+.button-up {
+	width: 150px;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #545454;
+}
+
+.text-p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: rgb(186, 186, 186);
+}
+.text-p-align {
+	text-align: center;
+}
+
+span {
+	color: #007BFF;
+}
+
+.mg-top-left {
+	margin-top: 35px;
+	margin-left: 100px;
+	margin-bottom: 40px;
+}
+
+#icon {
+	background-image: url(../assets/images/Photo\ Camera.svg);
+	position: relative;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-right: 10px;
+	
+}
+
+#icon-trash {
+	background-image: url(../assets/images/Trash.svg) ;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: center;
+	background-size: 20px;
+}
+
+:focus {
+	outline: 1px solid #007BFF ;
+}

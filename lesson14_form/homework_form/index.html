@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Form</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles.css/styles.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src='./script.js'></script>
+</head>
+
+<body style="display: flex; gap: 30px;">
+	<section class="container text">
+		<h1>Create an Account</h1>
+		<div >
+			<form >
+				<div class="form">
+					<div class="name">
+						<label for="firstname">First Name</label>
+						<input class="input" type="text" name="firstname" id="firstname">
+					</div>
+					<div class="name">
+						<label for="lastname">Last Name</label>
+						<input class="input" type="text" name="lastname" id="lastname">
+					</div>
+				</div>
+				<br>
+				<div class="name">
+					<label for="email">E-mail</label>
+					<input class="input" type="email" name="email" id="email">
+				</div>
+				<p class="text-p">We'll never share your email with anyone else.</p>
+			</form>
+
+			<form class="form_radio">
+				<div>
+					<input type="radio" name="female" id="male">
+					<label for="male">Male</label>
+				</div>
+				<div>
+					<input type="radio" name="female" id="female">
+					<label for="female">Female</label>
+				</div>
+			</form>
+	
+			<form ><br>
+				<div class="form">
+
+					<div class="name">
+						<label for="country" >Country</label>
+					  <select class="input" name="country" id="country" >
+							<option selected disabled>Select</option>
+							<option value="1">1</option>	
+							<option value="2">2</option>						 
+					  </select> 
+					</div>
+
+					<div class="name">
+						<label for="city">City</label>
+						<input class="input" type="text" name="city" id="city">
+					</div>
+				</div>
+				<br>
+				
+				<button class="input button">Sign Up</button>
+			</form>
+			<br><p class="text-p text-p-align">By clicking the 'Sign Up' button, you confirm that you accept our <br> <span>Terms of Use</span> and  <span>Privacy Policy</span>  </p>
+			<hr>
+			<div class="form-a">
+				<p class="text text-p-align">Have an account? </p>
+				<p><span>Log In</span></p>
+			</div>
+	</section>
+
+	<!-- Add section Profile -->
+	<section class="container text">
+		<h1>Profile</h1>
+		<img style="float: left;" src="./assets/images/📷 Image.svg" alt="photo">
+
+		<div class="mg-top-left">
+			<input class="input " type="text" id="icon">
+
+			<input class="input input-camera" type="text" id="icon-trash">
+	
+			<!-- <select class="input input-camera" name="camera" id="camera">
+			</select>
+			<img src="./assets/images/Trash.svg" alt=""> -->
+
+			<br>
+			<label class="text-p" for="text">Up to 1 MB (300x300 px)</label>
+		</div>
+
+		<div class="form">
+			<div class="name">
+				<label for="name">Name</label>
+				<input class="input" type="text" name="name" id="name">
+			</div>
+
+			<div class="name">
+				<label for="email">E-mail</label>
+				<input class="input" type="email" name="email" id="email">
+			</div>
+		</div><br>
+
+		<div class="form">
+			<div class="name">
+				<label for="country" >Country</label>
+				<select class="input" name="country" id="country" >
+					<option selected disabled>Select</option>
+					<option value="1">1</option>	
+					<option value="2">2</option>						 
+				</select> 
+			</div>
+
+			<div class="name">
+				<label for="city">City</label>
+				<input class="input" type="text" name="city" id="city">
+			</div>
+		</div><br>
+
+		<div class="form">
+			<div class="name">
+					<label for="zip-code">Zip Code</label>
+					<input class="input" type="text" name="zip-code" id="zip-code">
+				</div>
+	
+				<div class="name">
+					<label for="phone-number">Phone Number</label>
+					<input class="input" type="tel" name="phone-number" id="phone-number">
+				</div>
+		</div><br>
+		
+		<button class="button button-up input">Update</button>
+	</section>
+
+    
+</body>
+
+</html>
