@@ -28,7 +28,6 @@ html {
 }
 
 .sticky {
-	overflow: scroll;
 	position: sticky;
 	top: 145px;
 }
