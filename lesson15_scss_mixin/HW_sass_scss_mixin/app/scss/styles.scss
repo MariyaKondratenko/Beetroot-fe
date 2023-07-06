@@ -1,0 +1,61 @@
+@use './variables' as var;
+@use './text' as text;
+
+.container {
+	display: grid;
+	grid-template: repeat(2, minmax(100px, auto)) / repeat(3, minmax(200px, 1fr));
+	grid-template-areas:
+	"header header header"
+	"avatar v about";
+	row-gap: 40px;
+
+	&__v {
+		
+	} 
+
+	//   .container__header
+	&__header {
+		grid-area: header;
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 500;
+		font-family: 'Raleway', sans-serif;
+		 display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  gap: 10px;
+	}
+
+	&__title {
+		@include text.text-uppercase;
+		font-family: Roboto;
+		font-size: 60px;
+		font-weight: 900;
+		font-family: 'Roboto', sans-serif;
+	
+		// @include text.text--uppercase;
+	}
+
+	&__subtitle {
+		@include text.text-uppercase;
+	}
+
+// .container__avatar
+	&__avatar {
+		grid-area: avatar;
+		width: 300px;
+
+	}
+
+	// /container_about
+	&__about {
+		grid-area: about;
+	}
+
+	&__view-btn {
+		@include text.text-uppercase;
+	}
+
+
+}
