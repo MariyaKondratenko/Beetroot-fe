@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SVG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles.css/styles.css"
+    />
+  </head>
+
+  <body>
+    <svg class="example" width="500" height="500">
+      <!-- square -->
+      <!-- x - horizontal / y - vertical -->
+      <rect x="10" y="10" width="50" height="50" fill="red" />
+
+      <!-- rectangle -->
+      <rect x="10" y="70" width="50" height="70" rx="10 " />
+
+      <!-- circle -->
+      <circle cx="160" cy="70" r="50" />
+
+      <!-- ellipse -->
+      <ellipse cx="350" cy="75" rx="100" ry="50" />
+
+      <!-- line -->
+      <line x1="10" y1="160" x2="80" y2="230" />
+
+      <!-- polyline -->
+      <polyline points="60 160 80 180 100 160 120 180 140 160 " />
+
+      <!-- polyline triangle -->
+      <polyline points="10 300 50 230 90 300 10 300 50 230" />
+
+      <!-- polyline rhombus -->
+      <polyline points="100 300 150 230 200 300 150 370 100 300 150 230" />
+
+      <!-- polyline parallelogram -->
+      <polyline points="210 300 260 230 400 230 350 300 210 300 260 230" />
+
+      <path d="M10 360 L50 400" />
+      <path d="M50 360 L90 400 H200 V380 H270 L300 320 V380" />
+
+      <!-- path square -->
+      <path d="M10 410 H50 V450 H10 Z" fill="gold" />
+
+      <!-- path triangle -->
+      <path d="M150 410 L200 450 H100 Z" fill="green" />
+
+      <path d="M220,430 Q250, 405 250,430 T290,430" />
+    </svg>
+
+    <!-- Logo Gradient -->
+    <svg
+      wigth="100"
+      heught="100"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="Gradien1">
+          <stop class="stop1" offset="0%" />
+          <stop class="stop2" offset="50%" />
+          <stop class="stop3" offset="100%" />
+        </linearGradient>
+      </defs>
+
+      <rect id="rect1" x="0" y="0" rx="15" ry="15" width="100%" heught="100%" />
+      <text x="10%" y="50%">Logo</text>
+    </svg>
+
+    <!-- Comment -->
+    <div style="display: flex">
+      <div class="comment">
+        <svg width="70" height="70">
+          <path d="M40 40 L70 70 H10 Z" />
+        </svg>
+      </div>
+      <div class="comment">
+        <svg width="70" height="70">
+          <path d="M40 40 L70 70 H10 Z" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Extra home work -->
+    <svg class="extra" width="500" height="550">
+      <!-- card -->
+      <rect x="10" y="10" width="265" height="190" fill="gold" rx="15px" />
+      <rect x="10" y="35" width="265" height="35" fill="gray" />
+      <rect x="30" y="90" width="55" height="10" rx="5px" fill="white" />
+      <rect x="95" y="90" width="55" height="10" rx="5px" fill="white" />
+      <rect x="30" y="110" width="15" height="10" rx="5px" fill="white" />
+      <rect x="55" y="110" width="20" height="10" rx="5px" fill="white" />
+      <rect x="85" y="110" width="15" height="10" rx="5px" fill="white" />
+      <rect x="110" y="110" width="20" height="10" rx="5px" fill="white" />
+      <rect x="140" y="110" width="10" height="10" rx="5px" fill="white" />
+      <circle cx="190" cy="150" r="27" fill="red" />
+      <circle cx="230" cy="150" r="27" fill="blue" />
+
+      <!-- crown -->
+      <polyline
+        class="line"
+        points="370 15 400 75 440 35 420 105 320 105 300 35 340 75 370 15 400 75 "
+        stroke-linecap="round"
+        stroke-linecap="square"
+        stroke-linejoin="round"
+      />
+      <line
+        class="line"
+        x1="320"
+        y1="120"
+        x2="420"
+        y2="120"
+        stroke-linecap="round"
+      />
+
+      <!-- button -->
+      <rect x="290" y="133" width="160" height="90" rx="38px" fill="red" />
+      <path d="M350 150 L400 180 L350 210 Z" fill="white" />
+
+      <!-- Smileys -->
+      <circle cx="80" cy="280" r="50" fill="pink" />
+      <rect x="45" y="265" width="25" height="5" rx="3px" fill="orange" />
+      <rect x="90" y="265" width="25" height="5" rx="3px" fill="orange" />
+      <rect x="60" y="305" width="40" height="5" rx="3px" fill="gold" />
+
+      <circle cx="200" cy="280" r="50" fill="pink" />
+      <circle cx="180" cy="270" r="10" fill="purple" />
+      <circle cx="220" cy="270" r="10" fill="purple" />
+      <rect x="180" y="300" width="40" height="5" rx="3px" fill="gold" />
+
+      <!-- calculator -->
+      <rect x="275" y="230" width="170" height="240" rx="15px" fill="black" />
+      <rect x="290" y="250" width="140" height="45" rx="15px" fill="white" />
+      <rect x="290" y="340" width="60" height="15" rx="7px" fill="white" />
+      <rect x="313" y="318" width="15" height="60" rx="7px" fill="white" />
+      <rect x="370" y="340" width="60" height="15" rx="7px" fill="white" />
+
+      <line class="line-white" x1="300" y1="410" x2="340" y2="450" />
+      <line class="line-white" x1="340" y1="410" x2="300" y2="450" />
+
+      <line class="line-white" x1="420" y1="410" x2="380" y2="450" />
+      <circle cx="380" cy="410" r="10" fill="white" />
+      <circle cx="420" cy="450" r="10" fill="white" />
+
+      <!-- а key -->
+      <rect
+        style="fill: none; stroke: black; stroke-width: 15px"
+        x="40"
+        y="350"
+        width="90"
+        height="60"
+        rx="30px"
+      />
+      <rect x="70" y="417" width="30" height="15" fill="black" />
+      <rect x="75" y="430" width="20" height="115" fill="black" />
+      <rect x="90" y="455" width="20" height="20" fill="black" />
+      <rect x="90" y="490" width="40" height="20" fill="black" />
+      <rect x="90" y="525" width="60" height="20" fill="black" />
+    </svg>
+  </body>
+</html>

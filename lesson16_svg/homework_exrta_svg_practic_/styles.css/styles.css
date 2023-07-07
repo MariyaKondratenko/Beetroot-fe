@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.example {
+border: 1px solid black;
+fill: none;
+stroke-width: 5px;
+stroke: orange;
+} 
+
+.comment {
+	position: relative;
+	width: 200px;
+	height: 100px;
+	background-color: green;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+.comment > svg {
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 64px;
+	fill: green;
+}
+
+ /* Logo Gradient */
+
+svg text {
+	fill: white;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+#rect1 {
+	fill: url(#Gradien1);
+}
+
+.stop1 {
+	stop-color: red;
+}
+
+.stop2 {
+	stop-color: orangered;
+	opacity: .5;
+}
+
+.stop3 {
+	stop-color: gold;
+}
+
+/* Extra home work */
+.extra {
+border: 1px solid black;
+} 
+
+.line {
+	fill: none;
+	stroke-width: 5px ;
+	stroke: black;
+	stroke-linecap: round;
+	border-radius: 10px;
+	
+}
+
+.line-white {
+	stroke: white;
+	border-radius: 10px;
+	stroke-linecap: round;
+	stroke-width: 15px 
+}
