@@ -1,0 +1,146 @@
+@use "./variable" as var;
+@use "./mixins" as mix;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.site {
+  &__header {
+    height: var.$site-header-height;
+    border-bottom: 1px solid var.$lighten-blue;
+    @include mix.inline-padding;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: calc(
+      100% - (var.$site-header-height - var.$site-footer-height)
+    );
+    padding-block: var.$site-section-padding;
+    @include mix.inline-padding;
+  }
+
+  &__footer {
+    height: var.$site-footer-height;
+    background-color: var.$black;
+    @include mix.inline-padding;
+    color: var.$white;
+  }
+}
+
+.text-freehand {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.freehand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.text-h {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+}
+
+.text-g {
+  color: var.$gray;
+}
+
+.text-h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.text-p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var.$green;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @include mix.border(8px, var.$light-blue);
+  padding: 40px;
+
+  &__img {
+    @include mix.border(16px, var.$lighten-blue);
+    width: 64px;
+    height: 64px;
+  }
+
+  &__img--icon {
+    @include mix.bg-img("../assets/images/icon.svg");
+  }
+
+  &:hover {
+    border-color: var.$dark-green;
+    .card__img--icon {
+      @include mix.bg-img("../assets/images/megaphone-green.svg");
+    }
+  }
+
+  &__img--building {
+    @include mix.bg-img("../assets/images/building.svg");
+  }
+
+  &:hover {
+    border-color: var.$dark-green;
+    .card__img--building {
+      @include mix.bg-img("../assets/images/building-green.svg");
+    }
+  }
+
+  &__img--phone {
+    @include mix.bg-img("../assets/images/phone-icon.svg");
+  }
+
+  &:hover {
+    border-color: var.$dark-green;
+    .card__img--phone {
+      @include mix.bg-img("../assets/images/phone-green.svg");
+    }
+  }
+}
