@@ -1,0 +1,201 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+.site-header {
+  display: flex;
+  height: 24px;
+  @include mix.section-padding;
+  margin: 38px 0 38px 0;
+
+  &__text {
+    font-family: "Lato";
+    color: var.$black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+}
+
+.img {
+  margin-bottom: 90px;
+}
+
+.section-header {
+  @include mix.section-padding;
+  // column-gap: 70px;
+  // margin-bottom: 90px;
+
+  &__title {
+    @include mix.title;
+    @include mix.title-header-footer;
+    
+    @include mix.table-screen {
+      font-size: 33px;
+    }
+
+    @include mix.mobile-screen {
+      max-width: 300px;
+      font-size: 30px;
+      margin-bottom: 40px ;
+      letter-spacing: 1.5px;
+    }
+    
+  }
+}
+
+.img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  width: 1170px;
+  height: 500px;
+  flex-shrink: 0;
+  background-image: url(../assets/images/first-image.png);
+
+  @include mix.table-screen {
+    background-image: url(../assets/images/first-image-table.png)
+  }
+}
+
+.main {
+  @include mix.section-padding;
+
+  &__title {
+    @include mix.title;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    @include mix.table-screen {
+      font-size: 26px;
+      letter-spacing: 2.8px;
+    }
+
+    @include mix.mobile-screen {
+      letter-spacing: 2.6px;
+      max-width: 300px;
+    }
+    
+  }
+
+  &__text {
+    @include mix.text;
+    max-width: 1170px;
+    color: var.$gray;
+
+    @include mix.table-screen {
+      max-width: 700px;
+    }
+
+    @include mix.mobile-screen {
+      max-width: 300px;
+      font-size: 16px;
+    }
+  }
+
+  &__p {
+    max-width: 570px;
+
+    @include mix.table-screen {
+      max-width: 700px;
+    }
+
+    @include mix.mobile-screen {
+      max-width: 300px;
+      font-size: 16px;
+    }
+  }
+}
+
+.footer {
+  background-color: #f4f4f4;
+  @include mix.section-padding;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  @include mix.table-screen {
+      height: 410px;
+    }
+
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    @include mix.table-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    @include mix.table-screen {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include mix.title;
+    @include mix.title-header-footer;
+    margin-bottom: 30px;
+
+    @include mix.table-screen {
+      margin-bottom: 20px;
+    }
+
+    @include mix.mobile-screen {
+      font-size: 32px; 
+    }
+  }
+
+  &__text {
+    @include mix.text;
+    max-width: 1170px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @include mix.mobile-screen {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 23px;
+
+    @include mix.table-screen {
+      justify-content:  center;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+
+  &__copyright {
+    @include  mix.text;
+    font-size: 12px;
+    line-height: 166%;
+    letter-spacing: 1.6px;
+    margin: 0;
+
+    @include mix.mobile-screen {
+      font-size: 16px;
+    }
+  }
+
+  &__p {
+    display: flex;
+    justify-content: center;
+  }
+}
