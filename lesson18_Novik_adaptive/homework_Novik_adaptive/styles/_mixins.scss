@@ -1,0 +1,50 @@
+@use './_variables' as var;
+
+@mixin mobile-screen {
+  @media screen and (max-width: var.$tablet-screen) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media screen and (max-width: var.$desktop-screen) {
+    @content;
+  }
+}
+
+@mixin section-padding {
+  padding-inline: var.$desktop-inline-padding;
+
+	@include tablet-screen {
+		padding-inline: var.$tablet-inline-padding;
+    }
+
+	@include mobile-screen {
+		padding-inline: var.$mobile-inline-padding;
+	}
+}
+
+@mixin title {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	color: var.$black;
+	flex-shrink: 0;
+	// width: 300px;
+	// height: 60px;
+}
+
+@mixin text {
+  color: var.$black;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	flex-shrink: 0;
+	letter-spacing: 0.36px;
+}

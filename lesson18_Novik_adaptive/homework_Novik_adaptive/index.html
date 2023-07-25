@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Novik_adaptive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?famDashboardily=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav id="navigation" class="navigation">
+        <li>
+          <a class="navigation__link" href="#home">Home</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="#about">About me</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="#skills">Skills</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="navigation__link" href="#contacts">Contacts</a>
+        </li>
+        <button id="close-navigation" class="navigation__close-btn">
+          Close
+        </button>
+      </nav>
+      <img
+        id="open-navigation"
+        class="site-header__hamburger"
+        src="./assets/images/hamburger.svg"
+        alt="Hanburger img"
+      />
+    </header>
+
+    <main id="home">
+      <hr />
+      <div class="main-container">
+        <h1 class="main-container__title">Denis Novik</h1>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/novik_mobile_.png"
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="./assets/images/novik_tablet_.png"
+          />
+          <img
+            class="main-container__img"
+            src="./assets/images/novik_desktop_.png"
+            alt="lamp img"
+          />
+        </picture>
+      </div>
+
+      <!-- Section About me -->
+      <section class="first-section" id="about">
+        <div class="first-section__section">
+          <h2 class="first-section__section__title">About me</h2>
+          <div class="first-section__section__p">
+            <p class="first-section__section__p__mg">
+              Hi, I'm Denis – UX/UI designer from Minsk.<br />
+              I'm interested in design and everything connected with it.
+            </p>
+            <p class="first-section__section__p__mg">
+              I'm studying at courses "Web and mobile design <br />interfaces"
+              in IT-Academy.
+            </p>
+            <p class="first-section__section__p__mg">
+              Ready to implement excellent projects<br />
+              with wonderful people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Skills -->
+      <section class="second-section" id="skills">
+        <h2 class="second-section__title">Skills</h2>
+        <p class="second-section__p">I work in such programs as</p>
+
+        <div class="second-section__programs">
+          <div class="second-section__single">
+            <img
+              class="second-section__img"
+              src="./assets/images/Ps.png"
+              alt="Logo photoshop"
+            />
+            <p class="second-section__pp">Adobe <br />Photoshop</p>
+            <div>
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-em.svg" alt="star-em" />
+              <img src="./assets/images/star-em.svg" alt="star-em" />
+              <img src="./assets/images/star-em.svg" alt="star-em" />
+            </div>
+          </div>
+
+          <div>
+            <div class="second-section__single">
+              <img
+                class="second-section__img"
+                src="./assets/images/Ai.png"
+                alt="Logo illustrator"
+              />
+              <p class="second-section__pp">Adobe <br />Illustrator</p>
+              <div>
+                <img src="./assets/images/star-icon.svg" alt="star-icon" />
+                <img src="./assets/images/star-icon.svg" alt="star-icon" />
+                <img src="./assets/images/star-icon.svg" alt="star-icon" />
+                <img src="./assets/images/star-em.svg" alt="star-em" />
+                <img src="./assets/images/star-em.svg" alt="star-em" />
+              </div>
+            </div>
+          </div>
+
+          <div class="second-section__single">
+            <img
+              class="second-section__img"
+              src="./assets/images/Ae.png"
+              alt="Logo After Effects"
+            />
+            <p class="second-section__pp">Adobe <br />After Effects</p>
+            <div>
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-em.svg" alt="star-em" />
+            </div>
+          </div>
+
+          <div class="second-section__single">
+            <img
+              class="second-section__img--figma"
+              src="./assets/images/Figma.png"
+              alt="Logo Figma"
+            />
+            <p class="second-section__pp">Figma</p>
+            <div>
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+              <img src="./assets/images/star-icon.svg" alt="star-icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/fashion_store_mobile.png"
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="./assets/images/fashion_store_tablet.png"
+          />
+          <img
+            class="portfolio__img"
+            src="./assets/images/fashion_store_desktop.png"
+            alt="lamp img"
+          />
+        </picture>
+        <p class="portfolio__p">Online fashion store - <br />Homepage</p>
+
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/reebok_web_mobile.png"
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="./assets/images/reebok_web_tablet.png"
+          />
+          <img
+            class="portfolio__img"
+            src="./assets/images/reebok_web_desktop.png"
+            alt="lamp img"
+          />
+        </picture>
+        <p class="portfolio__p">Reebok Store - Concept</p>
+
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/braun-landing_mobile.png"
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="./assets/images/braun-landing_tablet.png"
+          />
+          <img
+            class="portfolio__img"
+            src="./assets/images/braun-landing_desktop.png"
+            alt="lamp img"
+          />
+        </picture>
+        <p class="portfolio__p portfolio__p--braun">
+          Braun Landing Page - Concept
+        </p>
+      </section>
+      <!-- Section Contacts -->
+      <section class="footer" id="contacts">
+        <h2 class="footer__title">Contacts</h2>
+        <p class="footer__p">
+          Want to know more or just chat? <br />You are welcome!
+        </p>
+        <button class="footer__button">Send message</button>
+        <div class="footer__sm">
+          <img src="./assets/images/linkedin.png" alt="Logo linkedin" />
+          <img src="./assets/images/instagram.png" alt="Logo instagram" />
+          <img src="./assets/images/behance.png" alt=https://www.youtube.com/watch?v=IdMREOLsY4U&ab_channel=ProgrammingTT"Logo behance" />
+          <img src="./assets/images/dribbble.png" alt="Logo dribbble" />
+        </div>
+        <p class="footer__pp">
+          Like me on <br />LinkedIn, Instagram, Behance,<br />
+          Dribble
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
