@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Типи даних та оператори</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div>
+      <h3>Типи даних:</h3>
+      <ul>
+        <li>
+          <p style="font-weight: bold">Числа (Numbers):</p>
+          <p>
+            Включає цілі числа та числа з плаваючою комою, наприклад: 5, 3.14,
+            -10
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Рядки (Strings):</p>
+          <p>
+            Використовуються для представлення текстової інформації. Рядки
+            повинні бути заключені в подвійні (") або одинарні (') лапки,
+            наприклад: "Hello, world!", 'JavaScript'.
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Булеві значення (Booleans):</p>
+          <p></p>
+        </li>
+        <li>
+          <p style="font-weight: bold"></p>
+          <p>
+            Мають два можливих значення: true (істина) і false (неправда). Вони
+            використовуються для логічних виразів.
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Масиви (Arrays):</p>
+          <p>
+            Використовуються для зберігання колекцій даних. Масив може містити
+            різні типи даних та інші масиви.
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Об'єкти (Objects):</p>
+          <p>
+            Використовуються для зберігання колекцій ключ-значення, де ключі -
+            це рядки, а значення - будь-які типи даних.
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Null:</p>
+          <p>Представляє відсутність значення або непевність щодо значення.</p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Undefined:</p>
+          <p>
+            Вказує на те, що змінна була оголошена, але їй не було призначено
+            значення.
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Символи (Symbols):</p>
+          <p>
+            Це унікальні імутабельні значення, які можна використовувати як
+            ключі для властивостей об'єктів
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Функції (Functions):</p>
+          <p>
+            В JavaScript функції є об'єктами, і вони можуть бути використані для
+            виконання коду та повернення значень.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>Вирази в JavaScript</h3>
+      <h4>Kомбінації операндів і операторів:</h4>
+      <ul>
+        <li>
+          <p style="font-weight: bold">Арифметичні вирази:</p>
+          <p>
+            const sum = 5 + 3; // Додавання <br />const difference = 10 - 4; //
+            Віднімання <br />
+            const product = 6 * 2; // Множення <br />const quotient = 8 / 2; //
+            Ділення
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Логічні вирази:</p>
+          <p>
+            const isTrue = true; <br />
+            const isFalse = false; <br />
+            const logicalAnd = isTrue && isFalse; // Логічне "І" <br />
+            const logicalOr = isTrue || isFalse; // Логічне "АБО" <br />
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Рядкові вирази (конкатенація рядків):</p>
+          <p>
+            const firstName = "John"; <br />
+            const lastName = "Doe"; <br />
+            const fullName = firstName + " " + lastName; // Конкатенація рядків
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Вирази зі змінними та функціями:</p>
+          <p>
+            const x = 5; <br />
+            const y = 10; <br />
+            function add(a, b) { return a + b; } <br />
+            const result = add(x, y); // Виклик функції та обчислення
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Вирази з логічними умовами:</p>
+          <p>
+            const age = 25; <br />
+            const hasLicense = true; <br />
+            const canDrive = age >= 18 && hasLicense; // Логічна умова
+          </p>
+        </li>
+        <li>
+          <p style="font-weight: bold">Вирази з масивами та об'єктами:</p>
+          <p>
+            const numbers = [1, 2, 3, 4, 5]; <br />
+            const person = { name: "Alice", age: 30 }; <br />
+            const firstNumber = numbers[0]; // Отримання першого елементу масиву
+            <br />
+            const personName = person.name; // Отримання властивості об'єкта
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
